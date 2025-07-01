@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"alb","Source":"./alb","Dir":"alb"},{"Key":"app","Source":"./app","Dir":"app"},{"Key":"db","Source":"./db","Dir":"db"},{"Key":"security","Source":"./security","Dir":"security"},{"Key":"vpc","Source":"./vpc","Dir":"vpc"},{"Key":"web","Source":"./web","Dir":"web"}]}
