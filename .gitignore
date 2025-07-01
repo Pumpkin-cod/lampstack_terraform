@@ -1,7 +1,17 @@
-.terraform/
-.terraform.lock.hcl
+# Terraform files
 .terraform/
 .terraform.lock.hcl
 *.tfstate
 *.tfstate.backup
+*.tfstate.*.backup
+*.tfplan
 *.tfvars
+!*.tfvars.example
+
+# Crash log files
+crash.log
+crash.*.log
+
+# OS files
+.DS_Store
+Thumbs.db
