@@ -22,3 +22,8 @@ variable "key_name" {
   description = "Key pair name for SSH access"
   type        = string
 }
+
+variable "app_private_ip" {
+  description = "Private IP address of the App EC2 instance (used to forward requests)"
+  type        = string
+}

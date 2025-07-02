@@ -28,3 +28,9 @@ variable "security_group_id" {
   description = "Security group ID for the RDS instance"
   type        = string
 }
+
+variable "engine_version" {
+  description = "MySQL engine version"
+  type        = string
+  default     = "8.0"
+}

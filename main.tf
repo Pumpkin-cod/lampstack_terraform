@@ -22,7 +22,9 @@ module "web" {
   subnet_id          = module.vpc.public_subnets[0]
   security_group_id  = module.security.web_sg_id
   key_name           = var.key_name
+  app_private_ip     = module.app.app_private_ip
 }
+
 
 module "db" {
   source            = "./db"
@@ -41,6 +43,11 @@ module "app" {
   subnet_id          = module.vpc.private_subnets[0]
   security_group_id  = module.security.app_sg_id
   key_name           = var.key_name
+
+  db_host            = module.db.rds_endpoint
+  db_user            = var.db_user
+  db_pass            = var.db_pass
+  db_name            = var.db_name
 }
 
 module "alb" {

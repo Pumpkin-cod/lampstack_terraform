@@ -51,3 +51,15 @@ variable "db_password" {
 variable "db_instance_class" {
   default = "db.t3.micro"
 }
+
+variable "db_user" {
+  description = "Username for the RDS database"
+  type        = string
+  default     = "admin"
+}
+
+variable "db_pass" {
+  description = "Password for the RDS database"
+  type        = string
+  sensitive   = true
+}
